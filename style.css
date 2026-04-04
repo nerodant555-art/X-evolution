@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #000000, #111111);
+    border-bottom: 3px solid #ff6a00;
+}
+
+/* LOGO MAIOR */
+.logo {
+    width: 600px;
+    max-width: 95%;
+    margin-bottom: 40px;
+}
+
+/* QUEM SOMOS */
+.quem-somos {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.quem-somos h2 {
+    color: #ff6a00;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.quem-somos p {
+    color: #cccccc;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* EBOOKS */
+.ebooks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    padding: 60px;
+    text-align: center;
+}
+
+/* IMAGENS MENORES */
+.ebook img {
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFEITO LEVANTAR */
+.ebook img:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(255, 106, 0, 0.7);
+}
+
+.ebook h3 {
+    margin-top: 15px;
+    color: #ff6a00;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    border-top: 2px solid #ff6a00;
+    color: #aaa;
+}
+
+
+
+
+
+.btn-comprar {
+    background: #ff6600;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background: #ff8533;
+    transform: scale(1.05);
+}
+
+
+
+
+/* CARD EM BREVE */
+.lancamento .placeholder {
+    width: 180px;
+    height: 260px;
+    background: linear-gradient(145deg, #111, #1c1c1c);
+    border: 2px dashed #ff6a00;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.lancamento .placeholder span {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.lancamento .placeholder p {
+    color: #ff6a00;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lancamento .placeholder:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(255, 106, 0, 0.6);
+}
+
+
+
+/* BOTÃO AMOSTRA */
+.btn-amostra {
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* EFEITO HOVER */
+.btn-amostra:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #0056b3, #0099cc);
+}

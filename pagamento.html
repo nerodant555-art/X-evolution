@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagamento | X Evolution</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    color: #ff6a00;
+}
+
+.qr-container {
+    margin: 40px 0;
+}
+
+.qr-container img {
+    width: 600px;
+    max-width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    padding: 15px;
+    background: white;
+}
+
+.pix-box {
+    margin-top: 30px;
+}
+
+.pix-box input {
+    width: 90%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff6a00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #e65c00;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Finalize seu Pagamento</h1>
+
+<p>Escaneie o QR Code abaixo para realizar o pagamento via Pix.</p>
+
+<div class="qr-container">
+    <img src="pix.jpg" alt="QR Code Pix">
+</div>
+
+<div class="pix-box">
+    <p>Ou copie o código Pix abaixo:</p>
+
+    <input type="text" id="pixCode" value="00020126430014br.gov.bcb.pix0121nerodant555@gmail.com520400005303986540519.905802BR5925Pedro Vinnicius Lima Silv6009Sao Paulo62290525REC6994B4572341665343720663044AA3" readonly>
+
+    <br>
+
+    <button onclick="copiarPix()">Copiar Código Pix</button>
+</div>
+
+<script>
+function copiarPix() {
+    var copyText = document.getElementById("pixCode");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    alert("Código Pix copiado!");
+}
+</script>
+
+</body>
+</html>
